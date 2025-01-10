@@ -8,6 +8,8 @@
       logFile = "/tmp/nvim.log";
     };
 
+    extraLuaFiles = [./init.lua];
+
     spellcheck = {
       enable = true;
     };
