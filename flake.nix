@@ -24,6 +24,22 @@
               };
 
               keymaps = [
+                # Stay in indent mode
+                # https://github.com/AstroNvim/AstroNvim/blob/v4.7.7/lua/astronvim/plugins/_astrocore_mappings.lua#L117-L118
+                {
+                  mode = "v";
+                  key = "<S-Tab>";
+                  action = "<gv";
+                  silent = true;
+                  desc = "Unindent line";
+                }
+                {
+                  mode = "v";
+                  key = "<Tab>";
+                  action = ">gv";
+                  silent = true;
+                  desc = "Indent line";
+                }
                 {
                   mode = "n";
                   key = "<leader>pt";
