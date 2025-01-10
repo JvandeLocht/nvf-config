@@ -219,7 +219,10 @@
                 lua.enable = true;
                 zig.enable = true;
                 python.enable = true;
-                typst.enable = true;
+                typst = {
+                  enable = true;
+                  format.type = "typstyle";
+                };
                 rust = {
                   enable = true;
                   crates.enable = true;
