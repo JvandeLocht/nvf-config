@@ -10,6 +10,8 @@
 
     extraLuaFiles = [./init.lua];
 
+    useSystemClipboard = true;
+
     spellcheck = {
       enable = true;
     };
