@@ -171,16 +171,5 @@
     presence = {
       neocord.enable = false;
     };
-
-    # extraPlugins = with nixpkgs.legacyPackages."x86_64-linux".vimPlugins; {
-    #   rip-substitute = {
-    #     package = nvim-rip-substitute;
-    #     setup = "require('rip-substitute').setup {}";
-    #   };
-    # };
-    # extraPackages = with nixpkgs.legacyPackages."x86_64-linux"; [
-    #   fzf
-    #   ripgrep
-    # ];
   };
 }
