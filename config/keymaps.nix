@@ -146,6 +146,13 @@
         silent = true;
         desc = "Focus Neotree";
       }
+      {
+        key = "<Esc>";
+        mode = ["n"];
+        action = "<cmd>nohlsearch<CR>";
+        silent = true;
+        desc = "clear highlighted search results";
+      }
     ];
   };
 }
