@@ -18,3 +18,19 @@ VIM.api.nvim_create_autocmd("TextYankPost", {
                 })
         end,
 })
+
+-- Autoreload of File, if changed on disk. Sending notification if it got changed.
+VIM.o.autoread = true
+VIM.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
+        callback = function()
+                if VIM.fn.mode() ~= "c" then
+                        VIM.cmd("checktime")
+                end
+        end,
+        pattern = { "*" },
+})
+VIM.api.nvim_create_autocmd("FileChangedShellPost", {
+        callback = function()
+                VIM.notify("File changed on disk. Buffer reloaded.", VIM.log.levels.WARN)
+        end,
+})
