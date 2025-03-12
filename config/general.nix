@@ -20,6 +20,7 @@
 
     spellcheck = {
       enable = true;
+      languages = ["en" "de"];
     };
 
     debugger = {
