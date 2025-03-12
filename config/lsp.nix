@@ -42,7 +42,10 @@
       };
       typst = {
         enable = true;
-        format.type = "typstyle";
+        format = {
+          enable = true;
+          type = "typstyle";
+        };
       };
       rust = {
         enable = true;
