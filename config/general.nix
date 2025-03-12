@@ -8,6 +8,10 @@
       logFile = "/tmp/nvim.log";
     };
 
+    options = {
+      tabstop = 2;
+    };
+
     extraLuaFiles = [./init.lua];
 
     useSystemClipboard = true;
