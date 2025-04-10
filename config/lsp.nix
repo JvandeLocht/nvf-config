@@ -8,9 +8,10 @@
       trouble.enable = true;
       lspSignature.enable = true;
       otter-nvim.enable = true;
-      lsplines.enable = true;
+      # lsplines.enable = true;
       nvim-docs-view.enable = true;
     };
+    # vim.diagnostics.config
 
     # This section does not include a comprehensive list of available language modules.
     # To list all available language module options, please visit the nvf manual.
