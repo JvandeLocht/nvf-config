@@ -16,7 +16,9 @@
 
     extraLuaFiles = [./init.lua];
 
-    useSystemClipboard = true;
+    clipboard = {
+      registers = "unnamedplus";
+    };
 
     spellcheck = {
       enable = true;
