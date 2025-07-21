@@ -1,7 +1,7 @@
 { config, ... }:
 {
   config.vim = {
-    viAlias = true;
+    viAlias = false;
     vimAlias = true;
     debugMode = {
       enable = false;
@@ -88,12 +88,6 @@
     };
 
     telescope.enable = true;
-
-    git = {
-      enable = true;
-      # gitsigns.enable = true;
-      # gitsigns.codeActions.enable = false; # throws an annoying debug message
-    };
 
     minimap = {
       minimap-vim.enable = false;
