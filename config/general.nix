@@ -1,4 +1,5 @@
-{config, ...}: {
+{ config, ... }:
+{
   config.vim = {
     viAlias = true;
     vimAlias = true;
@@ -14,7 +15,7 @@
       autoindent = true;
     };
 
-    extraLuaFiles = [./init.lua];
+    extraLuaFiles = [ ./init.lua ];
 
     clipboard = {
       registers = "unnamedplus";
@@ -22,7 +23,10 @@
 
     spellcheck = {
       enable = true;
-      languages = ["en" "de"];
+      languages = [
+        "en"
+        "de"
+      ];
     };
 
     debugger = {
@@ -87,8 +91,8 @@
 
     git = {
       enable = true;
-      gitsigns.enable = true;
-      gitsigns.codeActions.enable = false; # throws an annoying debug message
+      # gitsigns.enable = true;
+      # gitsigns.codeActions.enable = false; # throws an annoying debug message
     };
 
     minimap = {
@@ -134,7 +138,9 @@
       toggleterm = {
         enable = true;
         lazygit.enable = true;
-        setupOpts = {direction = "float";};
+        setupOpts = {
+          direction = "float";
+        };
       };
     };
 
@@ -155,7 +161,10 @@
           nix = "110";
           ruby = "120";
           java = "130";
-          go = ["90" "130"];
+          go = [
+            "90"
+            "130"
+          ];
         };
       };
       fastaction.enable = true;
